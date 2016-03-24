@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/edge_padding"
+              android:layout_marginStart="@dimen/edge_padding"
+              android:layout_marginEnd="@dimen/edge_padding">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/tweet_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="@dimen/edge_padding"
+                />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tweet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/menu_padding"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/med_text"
+                        />
+                <TextView
+                        android:id="@+id/tweet_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                    android:id="@+id/tweet_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sub_text"
+                    />
+
+            <ImageView
+                    android:id="@+id/tweet_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+            <TextView
+                    android:id="@+id/tweet_loaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/menu_padding"
+                    android:layout_marginBottom="@dimen/menu_padding"
+                    />
+
+            <Button
+                    android:id="@+id/reply_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/edge_padding"
+                    android:text="@string/rply_btn_text"
+                    android:drawablePadding="@dimen/menu_padding"
+                    android:drawableEnd="@drawable/reply_grey"
+                    />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
